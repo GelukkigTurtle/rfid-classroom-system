@@ -8,9 +8,13 @@ To run the RFID Classroom System you must download the respository and import 'S
 ## If you have the configured Arduino with RFID, plug it to a USB port and follow the next step:
 
 2) Depending you SO(Windows, Linux, Mac OS) you must follow the Libs/USB port drivers/INSTALL instructions.
+
 3) Compile the Arduino Code/sketch.cpp code 
 
 For final step compile and run the project.
+
+To start the RFID lector, click in 'INICIAR LECTOR' button on main screen, if you dosen't have the lector the program is going to
+ask you if you whant to introduce the professor card ID manually.
 
 ### RFID Classroom System screenshots
 

@@ -50,7 +50,7 @@ public class Main_Frame extends javax.swing.JFrame {
      */
     
     private ControllerDocente docenteController;
-    private LogController logController;
+    private LogController logController = new LogController();
     private DocenteDAO docDao;
     String ruta,nombre;
     int contador=0;
@@ -772,7 +772,7 @@ public class Main_Frame extends javax.swing.JFrame {
 
             //guardamos imagen
             int id = docenteController.obtenerIDSiguiente();
-            if(!ruta.equals("")){
+            if(ruta != null  && !ruta.equals("")){
                 if(docDao.guardarImagen(ruta,nombre, id)){
                     txtImagenDir.setText("");
                     imgFotoDoc.setIcon(null);
